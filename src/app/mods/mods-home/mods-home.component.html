@@ -1,0 +1,17 @@
+<app-divider>Modal</app-divider>
+<button (click)="onClick()">Show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+    <div modalDescription class="description">
+        <div class="ui header">We've auto-chosen a profile image for you.</div>
+        <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+        <p>Is it okay to use this photo?</p>
+    </div>
+
+    <!-- <button  (click)="onClick()">close</button> -->
+
+    
+</app-modal>
+
+
+<app-divider>Accordions</app-divider>
+<app-accordion [accordions]="accordions"></app-accordion>
